@@ -10,16 +10,16 @@ pipeline {
       }
     }
 
-    stage ('Code Quality CHeck!'){
+    stage ('code quality check!'){
       steps {
         echo 'Checking code quality'
         bat '''
-        findstr GOOD Quality.txt > nul
-        if errorlevel 1(
+        findstr GOOD quality.txt > nul
+        if errorlevel 1 (
           echo Code Quality Failed
           exit 1
         ) else (
-            echo Code Quality Passed
+            echo code Quality Passed
         )
         '''
       }
