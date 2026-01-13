@@ -1,1 +1,1 @@
-Quality_code=6000
+CODE_QUALITY=6000
